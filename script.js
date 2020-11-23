@@ -2,22 +2,22 @@ $(document).ready(function() {
 
   var TITLE = 'Income and Test Scores in Connecticut School Districts, 2009-13';
 
-  var POINT_X = 'income'; // column name for x values in data.csv
-  var POINT_X_PREFIX = '$'; // prefix for x values, eg '$'
-  var POINT_X_POSTFIX = ''; // postfix for x values, eg '%'
+  var POINT_X = 'income value'; // column name for x values in data.csv
+  var POINT_X_PREFIX = 'Rp'; // prefix for x values, eg '$'
+  var POINT_X_POSTFIX = '%'; // postfix for x values, eg '%'
 
-  var POINT_Y = 'grades'; // column name for y values in data.csv
+  var POINT_Y = 'score'; // column name for y values in data.csv
   var POINT_Y_PREFIX = ''; // prefix for x values, eg 'USD '
   var POINT_Y_POSTFIX = ''; // postfix for x values, eg ' kg'
 
   var POINT_NAME = 'district'; // point names that appear in tooltip
-  var POINT_COLOR = 'rgba(0,0,255,0.7)'; // eg `black` or `rgba(10,100,44,0.8)`
-  var POINT_RADIUS = 5; // radius of each data point
+  var POINT_COLOR = 'brown'; // eg `black` or `rgba(10,100,44,0.8)`
+  var POINT_RADIUS = 8; // radius of each data point
 
-  var X_AXIS = 'Median Household Income, USD'; // x-axis label, label in tooltip
-  var Y_AXIS = 'Grade, Relative to Average'; // y-axis label, label in tooltip
+  var X_AXIS = 'Median Household Income, Rp'; // x-axis label, label in tooltip
+  var Y_AXIS = 'Score, Relative to Average'; // y-axis label, label in tooltip
 
-  var SHOW_GRID = true; // `true` to show the grid, `false` to hide
+  var SHOW_GRID = false; // `true` to show the grid, `false` to hide
 
   // Read data file and create a chart
   $.get('./data.csv', function(csvString) {
