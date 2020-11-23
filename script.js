@@ -4,7 +4,7 @@ $(document).ready(function() {
 
   var POINT_X = 'income value'; // column name for x values in data.csv
   var POINT_X_PREFIX = 'Rp'; // prefix for x values, eg '$'
-  var POINT_X_POSTFIX = '%'; // postfix for x values, eg '%'
+  var POINT_X_POSTFIX = ',-'; // postfix for x values, eg '%'
 
   var POINT_Y = 'score'; // column name for y values in data.csv
   var POINT_Y_PREFIX = ''; // prefix for x values, eg 'USD '
